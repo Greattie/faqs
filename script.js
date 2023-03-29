@@ -1,10 +1,8 @@
 const btn = document.querySelectorAll('.btn')
 const ans= document.querySelectorAll('.ans')
 
-console.log(ans)
-
 btn.forEach(function(item){
-    item.addEventListener('click', function(e){
+    item.addEventListener('click', function(){
         ans.forEach(function(answer){
             if(answer.classList.contains('show')){
             answer.classList.remove('show')
